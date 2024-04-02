@@ -1,0 +1,44 @@
+
+.video_container {
+    display: flex;
+    margin: auto;
+    gap: 5px;
+    padding: 1rem;
+}
+
+.video_container .frame {
+    background-color: #F5F5F5;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.video_container .right_btn {
+    width: 45px;
+    margin: auto;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.video_container .frame .slider{
+    width: 1407.5px;
+    display: flex;
+}
+
+.video_container .left_btn {
+    width: 45px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.frame .slider video {
+    width: 100%;
+    height: 100%; 
+}
+
+.frame .slider img {
+    width: 100%;
+    height: 100%; 
+}

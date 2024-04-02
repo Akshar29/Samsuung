@@ -1,0 +1,840 @@
+.Boss .navbar {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: auto;
+    list-style: none;
+    padding: 15px 8px;
+    /* border: 2px solid; */
+    overflow: hidden;
+    font-family: 'SamsungOne', arial, sans-serif;
+}
+
+
+
+.nav_right a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.navbar button {
+    border: none;
+    background-color: transparent;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
+.navbar .nav_left {
+    font-size: 30px;
+    margin-left: 2%;
+    /* border: 2px solid; */
+}
+
+
+
+/* .navbar .nav_left svg{
+    width: 50%;
+    height: 22%;
+} */
+
+
+
+
+.navbar .nav_center {
+    display: flex;
+    width: 55%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bolder;
+    /* border: 2px solid; */
+}
+
+
+
+
+.navbar .nav_right {
+    display: flex;
+    width: 32%;
+    gap: 5% ;
+    /* justify-content:center; */
+    align-items: center;
+    font-size: 17px;
+    font-weight: bolder;
+    margin-right: -7%;
+    /* border: 2px solid; */
+}
+
+
+
+.nav_right .right1 {
+    width: 45%;
+    /* border: 2px solid; */
+}
+
+
+
+
+.nav_right .right1 ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    
+} 
+
+
+
+.nav_right .right2 {
+    /* border: 2px solid; */
+    width: 25%;
+}
+
+
+
+.nav_right .right2 ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+} 
+
+
+
+.nav_right .right2 img {
+    width: 25px;
+}
+
+
+
+.burger_btn .burger_b{
+    width: 35px;
+    position: relative;
+    right: -10%;
+    display: none;
+}
+
+
+
+.burger_menu { 
+    position: absolute;
+    /* border: 2px solid black; */
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1) ;
+    min-width: 290px;
+    height: 40rem;
+    right: 0;
+    top: 0;
+    font-family: 'SamsungOne', arial, sans-serif;
+    overflow: hidden;
+    display: none;
+    background-color: white;
+}
+
+
+
+
+.search_bar {
+    margin: 8px 1rem;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+
+
+.search_bar .search {
+    width: 80%;
+    padding: 3px;
+}
+
+
+
+.search_bar img {
+    position: absolute;
+    right: 0px;
+    top: -20px;
+}
+
+
+
+.burger_menu hr {
+    width: 85%;
+    margin: auto;
+}
+
+
+
+.burger_menu .burger_log {
+    margin: 2rem 1.5rem;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+
+
+.burger_menu .burger_log a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.burger_menu .burger_center {
+    margin: 1rem 1.5rem;
+    font-size: 18px;
+}
+
+
+
+.burger_menu .burger_center a{
+    padding-top: 20px;
+    text-decoration: none;
+    color: black;
+    display: block;
+
+}
+
+
+.burger_menu .burger_support {
+    margin: 1rem 1.5rem;
+    font-size: 18px;
+}
+
+
+
+.burger_menu .burger_support a{
+    padding-top: 20px;
+    text-decoration: none;
+    color: black;
+    display: block;
+
+}
+
+
+
+/* ----------------------------------------------------------------navbar Media Start------------------------------------------------------------------------------ */
+
+
+
+
+
+@media screen and (max-width : 1280px) {
+    .navbar .nav_center {
+        display: none;
+    }
+    
+    .navbar .nav_right .right1 {
+        display: none;
+    }
+
+    .navbar .nav_right .right2{
+        margin-left: 39%;
+        min-width: 35%;
+    }
+
+    .navbar .nav_right .burger_b {
+        display: block;
+    }
+
+    .burger_btn img {
+        right: -800%;
+        top:-10%;
+        display: block;
+    }
+
+    .burger_menu_active {
+        display: block;
+    }
+    
+    .search_bar img {
+        position: absolute;
+        right: -12px;
+        top: -5px;
+    }
+
+    .nav_right .right2.right_hide img {
+        display: none;
+    }
+
+    .nav_right .right2 #cancel {
+        display: block;
+        position: absolute;
+        top: -10%;
+        right: -2%;
+        width: 12%;
+    }
+}
+
+
+@media screen and (max-width : 1200px) {
+    .navbar .nav_right .right2{
+        margin-left: 39%;
+        min-width: 36%;
+    }
+}
+
+@media screen and (max-width : 1190px) {
+    .navbar .nav_right .right2{
+        margin-left: 39%;
+        min-width: 37%;
+    }
+}
+
+@media screen and (max-width : 1160px) {
+    .navbar .nav_right .right2{
+        margin-left: 39%;
+        min-width: 38%;
+    }
+}
+
+@media screen and (max-width : 1080px) {
+    .navbar .nav_right .right2{
+        margin-left: 38%;
+        min-width: 39%;
+    }
+}
+
+@media screen and (max-width : 1040px) {
+    .navbar .nav_right .right2{
+        margin-left: 37%;
+        min-width: 40%;
+    }
+}
+
+@media screen and (max-width : 1020px) {
+    .navbar .nav_right .right2{
+        margin-left: 36%;
+        min-width: 41%;
+    }
+}
+
+@media screen and (max-width : 980px) {
+    .navbar .nav_right .right2{
+        margin-left: 35%;
+        min-width: 42%;
+    }
+}
+
+@media screen and (max-width : 940px) {
+    .navbar .nav_right .right2{
+        margin-left: 34%;
+        min-width: 43%;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .navbar .nav_right .right2{
+        margin-left: 33%;
+        min-width: 44%;
+    }
+}
+
+@media screen and (max-width : 880px) {
+    .navbar .nav_right .right2{
+        margin-left: 32%;
+        min-width: 45%;
+    }
+}
+
+@media screen and (max-width : 850px) {
+    .navbar .nav_right .right2{
+        margin-left: 31%;
+        min-width: 46%;
+    }
+}
+
+@media screen and (max-width : 820px) {
+    .navbar .nav_right .right2{
+        margin-left: 30%;
+        min-width: 47%;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .navbar .nav_right .right2{
+        margin-left: 28%;
+        min-width: 49%;
+    }
+}
+
+@media screen and (max-width : 780px) {
+    .navbar .nav_right .right2{
+        margin-left: 26%;
+        min-width: 51%;
+    }
+}
+
+@media screen and (max-width : 760px) {
+    .navbar .nav_right .right2{
+        margin-left: 24%;
+        min-width: 52%;
+    }
+}
+
+@media screen and (max-width : 740px) {
+    .navbar .nav_right .right2{
+        margin-left: 22%;
+        min-width: 53%;
+    }
+}
+
+@media screen and (max-width : 720px) {
+    .navbar .nav_right .right2{
+        margin-left: 20%;
+        min-width: 55%;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .navbar .nav_right .right2{
+        margin-left: 18%;
+        min-width: 57%;
+    }
+}
+
+@media screen and (max-width : 680px) {
+    .navbar .nav_right .right2{
+        margin-left: 16%;
+        min-width: 59%;
+    }
+}
+
+@media screen and (max-width : 660px) {
+    .navbar .nav_right .right2{
+        margin-left: 14%;
+        min-width: 61%;
+    }
+}
+
+@media screen and (max-width : 640px) {
+    .navbar .nav_right .right2{
+        margin-left: 12%;
+        min-width: 63%;
+    }
+}
+
+@media screen and (max-width : 620px) {
+    .navbar .nav_right .right2{
+        margin-left: 10%;
+        min-width: 65%;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .navbar .nav_right .right2{
+        margin-left: 8%;
+        min-width: 68%;
+    }
+}
+
+@media screen and (max-width : 580px) {
+    .navbar .nav_right .right2{
+        margin-left: 6%;
+        min-width: 70%;
+    }
+}
+
+@media screen and (max-width : 560px) {
+    .navbar .nav_right .right2{
+        margin-left: 4%;
+        min-width: 72%;
+    }
+}
+
+@media screen and (max-width : 540px) {
+    .navbar .nav_right .right2{
+        margin-left: 2%;
+        min-width: 74%;
+    }
+}
+
+@media screen and (max-width : 520px) {
+    .navbar .nav_right .right2{
+        margin-left: 0%;
+        min-width: 76%;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .navbar .nav_right .right2{
+        margin-left: -2%;
+        min-width: 78%;
+    }
+}
+
+@media screen and (max-width : 490px) {
+    .navbar .nav_right .right2{
+        margin-left: -4%;
+        min-width: 80%;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .navbar .nav_right .right2{
+        margin-left: -6%;
+        min-width: 82%;
+    }
+}
+
+@media screen and (max-width : 470px) {
+    .navbar .nav_right .right2{
+        margin-left: -8%;
+        min-width: 84%;
+    }
+}
+
+@media screen and (max-width : 460px) {
+    .navbar .nav_right .right2{
+        margin-left: -10%;
+        min-width: 86%;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .navbar .nav_right .right2{
+        margin-left: -12%;
+        min-width: 88%;
+    }
+}
+
+@media screen and (max-width : 440px) {
+    .navbar .nav_right .right2{
+        margin-left: -14%;
+        min-width: 90%;
+    }
+}
+
+@media screen and (max-width : 430px) {
+    .navbar .nav_right .right2{
+        margin-left: -16%;
+        min-width: 92%;
+    }
+}
+
+@media screen and (max-width : 420px) {
+    .navbar .nav_right .right2{
+        margin-left: -18%;
+        min-width: 94%;
+    }
+}
+
+@media screen and (max-width : 410px) {
+    .navbar .nav_right .right2{
+        margin-left: -20%;
+        min-width: 96%;
+    }
+}
+
+
+
+
+/* ----------------------------------------------------------------Navbar Media end------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+.nav_center .shop {
+    cursor: pointer;
+}
+
+.nav_center .shop_menu {
+    position: absolute;
+    width: 40%;
+    height:65%;
+    display: flex;   
+    justify-content: space-around;
+    z-index: 1;
+    left: 15%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    border-radius: 0px  0px 25px 25px;
+    transition: all linear 0.3s;
+    overflow: hidden;
+    display: none;
+    transition: 0.5s;
+    padding-top: 25px;
+    font-size: 15px;
+    background-color: white;
+}
+
+.nav_center .shop:hover .shop_menu{
+    display: block;
+    display: flex;
+}
+
+.nav_center .shop_menu h3 {
+    margin-bottom: 10px;
+}
+
+.nav_center .shop_menu a {
+    color: black;
+    font-weight: lighter;
+    padding: 8px 0px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.nav_center .mobile_menu {
+    position: absolute;
+    width: 40%;
+    height: 68%;
+    display: flex;   
+    justify-content: space-around;
+    z-index: 1;
+    left: 21%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    border-radius: 0px  0px 25px 25px;
+    transition: all linear 0.3s;
+    overflow: hidden;
+    display: none;  
+    padding-top: 25px;
+    font-size: 14px;
+    background-color: white;
+}
+
+.nav_center .moblie {
+    cursor: pointer;
+}
+
+.nav_center .mobile:hover .mobile_menu{
+    display: block;
+    display: flex;
+}
+
+.nav_center .mobile_menu .mobile_col1 {
+    /* border: 2px solid; */
+    width: 80%;
+    padding-left: 1rem;
+}
+
+
+.nav_center .mobile_menu a {
+    color: black;
+    padding: 9px 0px;
+    text-decoration: none;
+    display: block;
+    font-weight: lighter ;
+    cursor: pointer;
+}
+
+.mobile_menu .mobile_frames {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    gap: 15px;
+    padding: 6px;
+    padding-left: 10px;
+    border-radius: 5px;
+    /* border: 2px solid; */
+    margin: auto;
+    
+}
+
+.mobile_menu .photos {
+    width: 30%;
+    /* max-height: 144px; */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    background-color: #F8F8F8;
+}
+
+.mobile_menu .photos img {
+    margin: auto;
+    width: 125px;
+    height: 110px  ;
+}
+
+
+
+
+
+
+.nav_center .tv_menu {
+    position: absolute;
+    width: 75%;
+    /* height: 388px; */
+    display: flex;   
+    justify-content: space-around;
+    left: 5rem;
+    z-index: 1;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    border-radius: 0px  0px 25px 25px;
+    transition: all linear 0.3s;
+    overflow: hidden;
+    display: none;
+    padding-top: 25px;
+    /* margin-top: 12px; */
+    font-size: 14px;
+    background-color: white;
+}
+
+.nav_center .tv {
+    cursor: pointer;
+}
+
+.nav_center .tv:hover .tv_menu{
+    display: block;
+    display: flex;
+}
+
+
+
+.nav_center .tv_menu a {
+    color: black;
+    padding: 9px 0px;
+    text-decoration: none;
+    display: block;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+
+
+
+
+.nav_center .appliances_menu {
+    position: absolute;
+    width: 90%;
+    height: 53%;
+    display: flex;   
+    justify-content: space-around;
+    z-index: 1;
+    left: 5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    border-radius: 0px  0px 25px 25px;
+    transition: all linear 0.3s;
+    overflow: hidden;
+    display: none;
+    padding-top: 25px;
+    /* margin-top: 12px; */
+    font-size: 14px;
+    background-color: white;
+}
+
+.nav_center .appliances{
+    cursor: pointer;
+}
+
+.nav_center .appliances:hover .appliances_menu{
+    display: block;
+    display: flex;
+}
+
+
+.nav_center .appliances_menu a {
+    color: black;
+    padding: 10px 0px;
+    text-decoration: none;
+    display: block;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.nav_center .appliances_menu .appliances_col5 ul{
+    margin-bottom: 15px;
+}
+
+.nav_center .appliances_menu .appliances_col6 ul{
+    margin-bottom: 15px;
+}
+
+
+
+
+
+.nav_center .laptop_menu {
+    position: absolute;
+    width: 65% ;
+    /* height: 388px; */
+    display: flex;   
+    justify-content: space-around;
+    left: 5rem;
+    z-index: 1;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    border-radius: 0px  0px 25px 25px;
+    transition: all linear 0.3s;
+    overflow: hidden;
+    display: none;
+    padding-top: 25px;
+    /* margin-top: 12px; */
+    font-size: 14px;
+    background-color: white;
+}
+
+.nav_center .laptop {
+    cursor: pointer;
+}
+
+.nav_center .laptop:hover .laptop_menu{
+    display: block;
+    display: flex;
+}
+
+
+
+.nav_center .laptop_menu a {
+    color: black;
+    padding: 9px 0px;
+    text-decoration: none;
+    display: block;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.nav_center .display_menu {
+    position: absolute;
+    width: 30%;
+    /* height: 196px; */
+    display: flex;   
+    justify-content: space-around;
+    left: 50%;
+    z-index: 1;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+    border-radius: 0px  0px 25px 25px;
+    transition: all linear 0.3s;
+    overflow: hidden;
+    display: none;
+    padding-top: 25px;
+    /* margin-top: 12px; */
+    font-size: 14px;
+    background-color: white;
+}
+
+.nav_center .display {
+    cursor: pointer;
+}
+
+.nav_center .display:hover .display_menu{
+    display: block;
+    display: flex;
+}
+
+
+
+.nav_center .display_menu a {
+    color: black;
+    padding: 9px 0px;
+    text-decoration: none;
+    display: block;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+
